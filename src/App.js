@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class Header extends Component {
@@ -18,7 +17,7 @@ class Header extends Component {
 
 const Social = ({children, url}) => (
   <li className="m0 p0 tr-s">
-    <a href="${url}">
+    <a href={url}>
       {children}
     </a>
   </li>
@@ -85,7 +84,6 @@ class App extends Component {
       <div>
        <Header />
        <Resume />
-       <Title>Bio</Title>
      </div>
     );
   }

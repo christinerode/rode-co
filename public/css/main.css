@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .name {
   font-family: 'Superclarendon-Black';
   letter-spacing: 0;

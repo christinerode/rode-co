@@ -81,7 +81,7 @@ class Resume extends Component {
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="mb-6">
        <Header />
        <Resume />
      </div>

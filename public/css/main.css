@@ -1,0 +1,32 @@
+body {
+  font-family: 'Superclarendon-Regular', 'Times New Roman', Times, serif !important;
+  background-color: #FFEDED;
+  color: #383838;
+}
+
+a {
+  color: #383838;
+  text-decoration: none;
+}
+
+.name {
+  font-family: 'Superclarendon-Black';
+  letter-spacing: 0;
+}
+
+ul, .dates, .light {
+  font-family: 'Superclarendon-Light';
+}
+
+h2, .h2 {
+font-family: 'Superclarendon-Light';
+color: #000000;
+letter-spacing: 0;
+font-weight: normal;
+display: inline;
+text-decoration: underline;
+}
+
+.place {
+  color: #B0B0B0;
+}

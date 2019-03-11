@@ -6,7 +6,7 @@ class Header extends Component {
     return (
         <div className="w-100">
           <div className="name fl w-70 w-20-ns f6">Christine Røde</div>
-           <ul className="light fl w-30 w-80-ns list ma0 pa0 f6 mb4">
+           <ul className="light fl w-30 w-80-ns list ma0 pa0 f6">
               <Social url="http://twitter.com/chrstnerode">Twitter</Social>
               <Social url="http://instagram.com/christinerode">Instagram</Social>
             </ul>

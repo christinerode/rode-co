@@ -85,7 +85,7 @@ class Resume extends Component {
           <Experience range="2013–2016" place="California&nbsp;/ London" no="03">
               Product Designer, Facebook
           </Experience>
-          <Experience range="&c" no="-"></Experience>
+          <Experience range="&c" no="&ellip;"></Experience>
 
         </div>
     );

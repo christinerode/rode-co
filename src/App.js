@@ -4,7 +4,7 @@ import './App.css';
 class Header extends Component {
   render() {
     return (
-        <div className="w-100">
+        <div className="w-100 pb6">
           <div className="name fl w-70 w-20-ns f6">Christine Røde</div>
            <ul className="light fl w-30 w-80-ns list ma0 pa0 f6">
               <Social url="http://twitter.com/chrstnerode">Twitter</Social>
@@ -24,7 +24,7 @@ const Social = ({children, url}) => (
 )
 
 const Title = ({children}) => (
-  <div className="cf fl w-100 mt5 mb5 mt6-ns">
+  <div className="cf fl w-100 mt3 mb5">
     <div className="fl w-20">
       <h2 className="ma0 f7">
         {children}
@@ -57,11 +57,24 @@ const Experience = ({children, range, place, no}) => (
   </div>
 )
 
+const Paragraph = ({children, no, css}) => (
+  <div className="fl w-100 mb3">
+    <div className="fl w-20 fw0 f7 light">
+       {no}
+    </div>
+    <div className="fl w-80 f4 f3-ns">
+      <h3 className="f3 mv0 fl w-100 fw4 lh-copy measure">
+        {children}
+      </h3>
+    </div>
+  </div>
+)
+
 class Resume extends Component {
   render() {
     return (
         <div className="fl w-100 mb2">
-          <Title>Experience</Title>
+          <Title>Selected experience</Title>
 
           <Experience range="2017–" place="London" no="01">
               Sr. Product Designer, Deliveroo
@@ -73,6 +86,20 @@ class Resume extends Component {
               Product Designer, Facebook
           </Experience>
           <Experience range="&c" no="-"></Experience>
+
+          <Title>A few words</Title>
+
+          <Paragraph no="04">I'm Christine, a digital product designer passionate about people, cultures, and places. </Paragraph>
+          <Paragraph no="05">With a focus on mobile apps, and I'm happest when I'm solving complex problems through elegant interfaces. </Paragraph>
+
+          <div className="cf pa5"></div>
+
+          <Title>Reach out</Title>
+
+          <Paragraph no="06"><strong>hi@christinerode.com</strong></Paragraph>
+
+          <div className="cf pa6"></div>
+
         </div>
     );
   }

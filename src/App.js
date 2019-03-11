@@ -58,12 +58,12 @@ const Experience = ({children, range, place, no}) => (
 )
 
 const Paragraph = ({children, no, css}) => (
-  <div className="fl w-100 mb3">
+  <div className="fl w-100 mb2 mb3-ns">
     <div className="fl w-20 fw0 f7 light">
        {no}
     </div>
     <div className="fl w-80 f4 f3-ns">
-      <h3 className="f3 mv0 fl w-100 fw4 lh-copy measure">
+      <h3 className="f5 f3-ns mv0 fl w-100 fw4 lh-copy measure">
         {children}
       </h3>
     </div>
@@ -74,7 +74,7 @@ class Resume extends Component {
   render() {
     return (
         <div className="fl w-100 mb2">
-          <Title>Selected experience</Title>
+          <Title>Experience</Title>
 
           <Experience range="2017–" place="London" no="01">
               Sr. Product Designer, Deliveroo
@@ -87,14 +87,14 @@ class Resume extends Component {
           </Experience>
           <Experience range="&c" no="-"></Experience>
 
-          <Title>A few words</Title>
+          <Title>Intro</Title>
 
-          <Paragraph no="04">I'm Christine, a digital product designer passionate about people, cultures, and places. </Paragraph>
-          <Paragraph no="05">With a focus on mobile apps, and I'm happest when I'm solving complex problems through elegant interactions and user-friendly interfaces. </Paragraph>
+          <Paragraph no="04">I'm Christine, a digital product designer passion&shy;ate about people, cultures, and&nbsp;places. </Paragraph>
+          <Paragraph no="05">With a focus on mobile apps, and I'm happest when I'm solving complex problems through elegant interactions and user-friendly inter&shy;faces. </Paragraph>
 
           <div className="cf pa5"></div>
 
-          <Title>Reach out</Title>
+          <Title>Say hi</Title>
 
           <Paragraph no="06"><strong>hi@christinerode.com</strong></Paragraph>
 

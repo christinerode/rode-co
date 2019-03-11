@@ -24,7 +24,7 @@ const Social = ({children, url}) => (
 )
 
 const Title = ({children}) => (
-  <div className="cf fl w-100 mt3 mb5">
+  <div className="cf fl w-100 mt5 mb5">
     <div className="fl w-20">
       <h2 className="ma0 f7">
         {children}

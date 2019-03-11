@@ -73,7 +73,7 @@ const Paragraph = ({children, no, css}) => (
 class Resume extends Component {
   render() {
     return (
-        <div className="fl w-100 mb2">
+        <div className="fl w-100 mb0">
           <Title>Experience</Title>
 
           <Experience range="2017–" place="London" no="01">
@@ -87,6 +87,15 @@ class Resume extends Component {
           </Experience>
           <Experience range="&c" no="-"></Experience>
 
+        </div>
+    );
+  }
+}
+
+class About extends Component {
+  render() {
+    return (
+        <div className="fl w-100 mb2">
           <Title>Intro</Title>
 
           <Paragraph no="¶">I'm Christine, a digital product designer passion&shy;ate about people, cultures, and&nbsp;places. </Paragraph>
@@ -111,6 +120,7 @@ class App extends Component {
       <div className="mb-6">
        <Header />
        <Resume />
+       <About />
      </div>
     );
   }

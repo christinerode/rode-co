@@ -99,7 +99,8 @@ class About extends Component {
           <Title>Intro</Title>
 
           <Paragraph no="¶">I'm Christine, a digital product designer passion&shy;ate about people, cultures, and&nbsp;places. </Paragraph>
-          <Paragraph no="¶">My primary focus is mobile apps. I'm the happiest when I'm solving complex problems through elegant systems and user-friendly interfaces. </Paragraph>
+          <Paragraph no="¶">My primary focus is mobile apps. I'm the happiest when I'm solving complex problems through elegant systems and simple interfaces.</Paragraph>
+
 
           <div className="cf pa5"></div>
 

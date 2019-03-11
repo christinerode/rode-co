@@ -67,7 +67,7 @@ class Resume extends Component {
               Sr. Product Designer, Deliveroo
           </Experience>
           <Experience range="2016–2017" place="Amsterdam / Stockholm" no="02">
-              Lead Designer, Freelance
+              Freelance Designer
           </Experience>
           <Experience range="2013–2016" place="California / London" no="03">
               Product Designer, Facebook

@@ -79,10 +79,10 @@ class Resume extends Component {
           <Experience range="2017–" place="London" no="01">
               Sr. Product Designer, Deliveroo
           </Experience>
-          <Experience range="2016–2017" place="Amsterdam / Stockholm" no="02">
+          <Experience range="2016–2017" place="Amsterdam&nbsp;/ Stockholm" no="02">
               Freelance Designer
           </Experience>
-          <Experience range="2013–2016" place="California / London" no="03">
+          <Experience range="2013–2016" place="California&nbsp;/ London" no="03">
               Product Designer, Facebook
           </Experience>
           <Experience range="&c" no="-"></Experience>

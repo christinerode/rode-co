@@ -90,7 +90,7 @@ class Resume extends Component {
           <Title>A few words</Title>
 
           <Paragraph no="04">I'm Christine, a digital product designer passionate about people, cultures, and places. </Paragraph>
-          <Paragraph no="05">With a focus on mobile apps, and I'm happest when I'm solving complex problems through elegant interfaces. </Paragraph>
+          <Paragraph no="05">With a focus on mobile apps, and I'm happest when I'm solving complex problems through elegant interactions and user-friendly interfaces. </Paragraph>
 
           <div className="cf pa5"></div>
 

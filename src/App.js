@@ -59,7 +59,7 @@ const Experience = ({children, range, place, no}) => (
 
 const Paragraph = ({children, no, css}) => (
   <div className="fl w-100 mb2 mb3-ns">
-    <div className="fl w-20 fw0 f7 light">
+    <div className="fl serif w-20 fw0 f7">
        {no}
     </div>
     <div className="fl w-80 f4 f3-ns">
@@ -89,14 +89,14 @@ class Resume extends Component {
 
           <Title>Intro</Title>
 
-          <Paragraph no="-">I'm Christine, a digital product designer passion&shy;ate about people, cultures, and&nbsp;places. </Paragraph>
-          <Paragraph no="-">With a focus on mobile apps, and I'm happest when I'm solving complex problems through elegant interactions and user-friendly inter&shy;faces. </Paragraph>
+          <Paragraph no="§">I'm Christine, a digital product designer passion&shy;ate about people, cultures, and&nbsp;places. </Paragraph>
+          <Paragraph no="¶">With a focus on mobile apps, and I'm happest when I'm solving complex problems through elegant interactions and user-friendly inter&shy;faces. </Paragraph>
 
           <div className="cf pa5"></div>
 
           <Title>Say hi</Title>
 
-          <Paragraph no="-"><strong>hi@christinerode.com</strong></Paragraph>
+          <Paragraph no="→"><strong>hi@christinerode.com</strong></Paragraph>
 
           <div className="cf pa6"></div>
 

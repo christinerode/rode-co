@@ -24,7 +24,7 @@ const Social = ({children, url}) => (
 )
 
 const Title = ({children}) => (
-  <div className="cf fl w-100 mt5 mt6-ns">
+  <div className="cf fl w-100 mt5 mb3 mt6-ns">
     <div className="fl w-20">
       <h2 className="ma0 f7">
         {children}
@@ -37,7 +37,7 @@ const Title = ({children}) => (
 )
 
 const Experience = ({children, range, place, no}) => (
-  <div className="fl w-100 mt5">
+  <div className="fl w-100 mt2 mb3">
     <div className="fl w-20 fw0 f7 light">
        {no}
     </div>

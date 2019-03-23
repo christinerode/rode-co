@@ -1,15 +1,32 @@
 import React, { Component } from 'react';
+import useDarkMode from 'use-dark-mode';
 import './App.css';
+
+const DarkModeToggle = () => {
+  const darkMode = useDarkMode(false);
+
+  return (
+    <div>
+      <button onClick={darkMode.toggle} className="toggle">
+        ☾
+      </button>
+    </div>
+  );
+};
+
 
 class Header extends Component {
   render() {
     return (
         <div className="w-100 pb6">
-          <div className="name fl w-70 w-20-ns f6">Christine Røde</div>
-           <ul className="light fl w-30 w-80-ns list ma0 pa0 f6">
+          <div className="name fl w-60 w-20-ns f6">Christine Røde</div>
+           <ul className="light fl w-30 w-50-ns list ma0 pa0 f6">
               <Social url="http://twitter.com/chrstnerode">Twitter</Social>
               <Social url="http://instagram.com/christinerode">Instagram</Social>
             </ul>
+            <div className="name fr w-10 w-20-ns f6 tr">
+              <DarkModeToggle />
+            </div>
         </div>
     );
   }

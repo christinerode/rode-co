@@ -53,24 +53,72 @@ const Title = ({children}) => (
   </div>
 )
 
-const Experience = ({children, range, place, no}) => (
-  <div className="fl w-100  mb5">
-    <div className="fl w-20 fw0 f7 light">
-       {no}
-    </div>
-    <div className="fl w-80 f4 f3-ns">
-      <div className="fl w-100 light lh-title">
-        {range}
+class Experience extends React.Component {
+  constructor(props) {
+    super(props)
+    // set our default state
+    this.state = {
+      showInfo: false,
+    }
+    // set up our methods
+    this.toggleInfo = this.toggleInfo.bind(this)
+    this.closeInfo = this.closeInfo.bind(this)
+  }
+  toggleInfo() {
+    // running setState like this gives us the previousState and props
+    // it makes sure we don’t
+    this.setState((prevState, props) => ({
+      // doing this will turn true to false and vice versa
+      showInfo: !prevState.showInfo,
+    }))
+  }
+  closeInfo() {
+    // run setState the regular way to close the overlay
+    this.setState({
+      showInfo: false,
+    })
+  }
+
+  render() {
+    // this is the same as writing const showInfo = this.state.showInfo
+    const {showInfo} = this.state
+    return (
+      <div className="fl w-100 mb5">
+        <div className="fl w-20 fw0 f7 light">
+          {this.props.no}
+        </div>
+        <div className="fl w-80 f4 f3-ns">
+          <div className="fl w-100 light lh-title">
+            {this.props.ange}
+          </div>
+          <h3 className="f3 f2-ns mv2 fl w-100 w-70-ns fw4 lh-title">
+            <a href="#" onClick={this.toggleInfo}>
+              {this.props.children}
+            </a>
+          </h3>
+          <div className="fr-ns w-100 w-20-ns mv2 place tl-ns f2-ns v-btm">
+            <span className="f6 sans-serif place lh-copy">
+              {this.props.place}
+            </span>
+          </div>
       </div>
-      <h3 className="f3 f2-ns mv2 fl w-100 w-70-ns fw4 lh-title">
-        {children}
-      </h3>
-      <div className="fr-ns w-100 w-20-ns mv2 place tl-ns f2-ns v-btm">
-        <span className="f6 sans-serif place lh-copy">
-          {place}
-        </span>
-      </div>
+        <Info {...this.props} {...this.state} />
     </div>
+    )
+  }
+}
+
+const Info = ({showInfo}) => (
+  <div 
+    className="info pt3 pt5-ns cl"
+    style={{display: showInfo ? 'block' : 'none', height: showInfo ? 'auto' : '0px'}}
+  >
+    <Paragraph no="&nbsp;">
+      Lorem ipsum
+    </Paragraph>
+    <Paragraph no="&nbsp;">
+      –
+    </Paragraph>
   </div>
 )
 
@@ -80,9 +128,9 @@ const Paragraph = ({children, no, css}) => (
        {no}
     </div>
     <div className="fl w-80 f4 f3-ns">
-      <h3 className="f5 f3-ns mv0 fl w-100 fw4 lh-copy measure">
+      <p className="f5 f3-ns mv0 fl w-100 fw4 lh-copy measure">
         {children}
-      </h3>
+      </p>
     </div>
   </div>
 )
@@ -97,7 +145,7 @@ class Resume extends Component {
               Sr. Product Designer, Deliveroo
           </Experience>
           <Experience range="2016–2017" place="Amsterdam&nbsp;/ Stockholm" no="02">
-              Freelance Designer
+              Designer, Freelance
           </Experience>
           <Experience range="2013–2016" place="California&nbsp;/ London" no="03">
               Product Designer, Facebook

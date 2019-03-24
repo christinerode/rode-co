@@ -30,6 +30,11 @@ a {
     color: inherit;
     cursor: pointer;
     border: none;
+    outline: none;
+  }
+
+  h3 a {
+    text-decoration: none !important;
   }
 
 .name {
@@ -53,6 +58,10 @@ text-decoration: underline;
   body.dark-mode h2, body.dark-mode .h2 {
     color: #C4C9CB;
   }
+
+.info {
+  transition: height 0.3s ease;
+}
 
 .place {
   color: #B0B0B0;

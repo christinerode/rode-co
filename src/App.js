@@ -89,7 +89,7 @@ class Experience extends React.Component {
         </div>
         <div className="fl w-80 f4 f3-ns">
           <div className="fl w-100 light lh-title">
-            {this.props.ange}
+            {this.props.range}
           </div>
           <h3 className="f3 f2-ns mv2 fl w-100 w-70-ns fw4 lh-title">
             <a href="#" onClick={this.toggleInfo}>
@@ -110,8 +110,8 @@ class Experience extends React.Component {
 
 const Info = ({showInfo}) => (
   <div 
-    className="info pt3 pt5-ns cl"
-    style={{display: showInfo ? 'block' : 'none', height: showInfo ? 'auto' : '0px'}}
+    className="info pt3 pt5-ns cl fw3"
+    style={{display: showInfo ? 'block' : 'block', height: showInfo ? '200px' : '0px', overflow: 'hidden'}}
   >
     <Paragraph no="&nbsp;">
       Lorem ipsum
@@ -145,7 +145,7 @@ class Resume extends Component {
               Sr. Product Designer, Deliveroo
           </Experience>
           <Experience range="2016–2017" place="Amsterdam&nbsp;/ Stockholm" no="02">
-              Designer, Freelance
+              Design Lead, Freelance
           </Experience>
           <Experience range="2013–2016" place="California&nbsp;/ London" no="03">
               Product Designer, Facebook

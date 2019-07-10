@@ -118,7 +118,7 @@ class About extends Component {
         <div className="fl w-100 mb2">
           <Title>Intro</Title>
 
-          <Paragraph no="¶">I'm Christine, a digital product designer passion&shy;ate about people, places, and&nbsp;culture. </Paragraph>
+          <Paragraph no="¶">I'm Christine, a digital product designer passion&shy;ate about people, places, food and&nbsp;culture. </Paragraph>
           <Paragraph no="¶">My primary focus is mobile apps. I thrive when I'm solving complex problems through elegant systems and simple interfaces.</Paragraph>
 
 

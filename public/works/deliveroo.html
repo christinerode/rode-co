@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>work by christine røde</title>
+  <meta name="description" content="selection of work by christine røde" />
+  <meta name="author" content="Christine Røde" />
+
+  <link rel="stylesheet" href="css/styles.css?v=1.1" />
+  <link rel="stylesheet" href="css/tachyons.css?v=1.0" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+  <script type="text/javascript">
+     $(document).ready(function() {
+
+       $(document).on("mouseover", '#appstore', function(event) { 
+          $(this).attr("src","work/deliveroo/appstore_hk.png");
+          console.log("mouseover");
+        });
+        
+        $(document).on("mouseout", '#appstore', function(event) { 
+          $(this).attr("src","work/deliveroo/appstore.png");
+          console.log("mouseout");
+        });
+        
+        $.preloadImages = function() {
+          for (var i = 0; i < arguments.length; i++) {
+            $("<img />").attr("src", arguments[i]);
+          }
+        }
+        
+        $.preloadImages("work/deliveroo/appstore_hk.png","work/fb/fbwork_composer_clicked@2x.png");
+
+  });  
+  </script>
+
+
+</head>
+
+<body class="pa3 pt4 pr4 pa5-ns">
+  <script src="js/scripts.js"></script>
+
+  <div class="mb-6"></div>
+
+  <div class="w-100 pb6">
+    <div class="name fl w-60 w-30-ns f6">Christine Røde</div>
+     <ul class="light fl w-30 w-50-ns list ma0 pa0 f6">
+      <li class="m0 p0 tr-s">
+        <a href="http://twitter.com/chrstnerode">
+          Twitter
+        </a>
+      </li>
+      <li class="m0 p0 tr-s">
+        <a href="http://instagram.com/christinerode">
+          Instagram
+        </a>
+      </li>
+      </ul>
+  </div>
+
+  <div id="menu" class="lh-copy f4">
+        <ul class="list pl0 fw5">
+                <li class="mb3">
+                  <span class="underline f7 db">01</span> 
+                  <a href="deliveroo.html" class=" selected">Deliveroo <span>Rider App</span></a>
+                </li>
+                <li class="mb3">
+                  <span class="underline f7 db">02</span> 
+                  <a href="rekki.html" >REKKI <span>Market</span></a>
+                </li>
+                <li class="mb3">
+                  <span class="underline f7 db">03</span> 
+                  <a href="facebook.html">Facebook <span>Workplace</span></a>
+                </li>
+                <li class="mb3">
+                  <span class="underline f7 db">04</span> 
+                  <a href="glue.html">Glue <span>Smart Lock</span></a>
+                </li>
+              </ul>
+
+
+  </div>
+
+  <div id="container" class="fr w-40" style="max-width: 1000px;">
+    <div class="pa4">
+
+    <h2 class="f5">Deliveroo Rider App</h2>
+	
+    <summary class="mt2">
+      <span class="light">Senior Product Designer, 2017–2019</span>
+    </summary>
+  
+      
+    <div class="fl w-100 mb2 mt4 mb3-ns">
+      <h3 class="f5 f3-ns mv0 fl w-100 fw4 lh-copy measure">
+            The Deliveroo Rider app is used by 50,000 couriers worldwide to find work, manage their hours, and deliver food to Deliveroo customers. For two years, I lead the design for the Rider Core team, focused primarily on delivery experience: helping riders get from A to B to C as easily as possible.</h3>
+      
+      <p class="cl f5 w-90 lh-copy pv4 columns">
+        Deliveroo operates in 12 different countries, from the United Kingdom to the United Arab Emirates, covering major cities across Europe, Asia, and Australia. Each market is completely different from the next, offering unique cityscapes, rider demographics, employment laws, and environmental conditions. Designing a single product that could accomodate a vast range of users and scenarios was a constant, rewarding challenge.  
+        </p>
+      </div>
+    </div>
+
+            <img src="work/deliveroo/appstore.png" id="appstore" class="header"/>
+
+            <div class="pa4">
+
+                    <div class="fl w-90 mb2 mt4 mb6 columns">
+                
+                        <p class="f5 f5-ns mv0 w-100 lh-copy mb5">
+                                In the UK, most of Deliveroo's riders are immigrants, reliant on the income to provide for families; in Italy they are university students living with their parents. In UAE a large chunk of riders are illiterate, most transactions are done in cash, and wide roads and hostile temperatures mean motorbikes are the only possible vehicle; in Hong Kong, most deliveries are done by foot, with riders spending more time in elevators than on the ground. </p>
+                          <p class="f5 f5-ns w-100 lh-copy mb5 db indent">In the early days, much of the work consistented of elegantly <em>removing</em> features, determining which parts of Facebook were not appropriate or useful in a work-context.
+                        </p>
+                    </div>
+                
+
+</div>
+</div>
+
+<div class="cb"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>work by christine røde</title>
+  <meta name="description" content="selection of work by christine røde" />
+  <meta name="author" content="Christine Røde" />
+
+  <link rel="stylesheet" href="css/styles.css?v=1.1" />
+  <link rel="stylesheet" href="css/tachyons.css?v=1.0" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+  <script type="text/javascript">
+     $(document).ready(function() {
+
+       $(document).on("mouseover", '#fbcomposer', function(event) { 
+          $(this).attr("src","work/fb/fbwork_composer_hover@2x.png");
+          console.log("mouseover");
+        });
+        
+        $(document).on("click", '#fbcomposer', function(event) { 
+          $(this).attr("src","work/fb/fbwork_composer_clicked@2x.png");
+          console.log("clicked");
+        });
+        
+        $(document).on("mouseout", '#fbcomposer', function(event) { 
+          $(this).attr("src","work/fb/fbwork_composer@2x.png");
+          console.log("mouseout");
+        });
+        
+        $.preloadImages = function() {
+          for (var i = 0; i < arguments.length; i++) {
+            $("<img />").attr("src", arguments[i]);
+          }
+        }
+        
+        $.preloadImages("work/fb/fbwork_composer_hover@2x.png","work/fb/fbwork_composer_clicked@2x.png");
+
+  });  
+  </script>
+
+
+</head>
+
+<body class="pa3 pt4 pr4 pa5-ns">
+  <script src="js/scripts.js"></script>
+
+  <div class="mb-6"></div>
+
+  <div class="w-100 pb6">
+    <div class="name fl w-60 w-30-ns f6">Christine Røde</div>
+     <ul class="light fl w-30 w-50-ns list ma0 pa0 f6">
+      <li class="m0 p0 tr-s">
+        <a href="http://twitter.com/chrstnerode">
+          Twitter
+        </a>
+      </li>
+      <li class="m0 p0 tr-s">
+        <a href="http://instagram.com/christinerode">
+          Instagram
+        </a>
+      </li>
+      </ul>
+  </div>
+
+  <div id="menu" class="lh-copy f4">
+    <ul class="list pl0 fw5">
+      <li class="mb3">
+        <span class="underline f7 db">01</span> 
+        <a href="deliveroo.html" class="fw4">Deliveroo <span>Rider App</span></a>
+      </li>
+      <li class="mb3">
+        <span class="underline f7 db">02</span> 
+        <a href="rekki.html">REKKI <span>Market</span></a>
+      </li>
+      <li class="mb3">
+        <span class="underline f7 db">03</span> 
+        <a href="facebook.html" class=" selected">Facebook <span>Workplace</span></a>
+      </li>
+      <li class="mb3">
+        <span class="underline f7 db">04</span> 
+        <a href="glue.html">Glue <span>Smart Lock</span></a>
+      </li>
+    </ul>
+
+
+      <!--<div class="fr fl-ns mb2 mb3-ns mt5">
+          <div class="fl serif w-10 fw0 f7 mt2 underline tr mr3">01.</div>
+          <div class="fl w-80 f4 f3-ns">
+           <p class="f5 f3-ns mv0 fl w-100 fw4 lh-copy measure">
+              <a href="#">Deliveroo Rider App</a>
+           </p>
+          </div>
+        </div>
+    
+        <div class="fl mb2 mb3-ns mt5">
+            <div class="fl serif w-10 fw0 f7 mt2 underline tr mr3">01.</div>
+            <div class="fl w-80 f4 f3-ns">
+               <p class="f5 f3-ns mv0 fl w-100 fw4 lh-copy measure">
+                <a href="#">REKKI Market</a>
+             </p>
+            </div>
+         </div>
+    
+         <div class="fl mb2 mb3-ns mt5">
+            <div class="fl serif w-10 fw0 f7 mt2 underline tr mr3">01.</div>
+            <div class="fl w-80 f4 f3-ns">
+               <p class="f5 f3-ns mv0 fl  w-100 fw4 lh-copy">
+                <a href="#">Facebook Workplace</a>
+             </p>
+            </div>
+          </div>
+    
+          <div class="fl mb2 mb3-ns mt5">
+              <div class="fl serif w-10 fw0 f7 mt2 underline tr mr3">01.</div>
+              <div class="fl w-80 f4 f3-ns">
+                   <p class="f5 f3-ns mv0 fl w-100 fw4 lh-copy measure">
+                  <a href="#">Glue Smartlock</a>
+               </p>
+              </div>
+            </div>
+            -->
+  </div>
+
+  <div id="container" class="fr w-40" style="max-width: 1000px;">
+    <div class="pa4">
+
+    <h2 class="f5">Facebook Workplace</h2>
+	
+    <summary class="mt2">
+      <span class="light">Product Designer, 2014–2016</span>
+    </summary>
+  
+      
+    <div class="fl w-100 mb2 mt4 mb3-ns">
+      <h3 class="f5 f3-ns mv0 fl w-100 fw4 lh-copy measure">
+      In 2014, I moved to London to lead design work for &#8220;Facebook at Work&#8221;, a small team in its infancy. It would later evolve to become <a href="https://www.facebook.com/workplace">Facebook Workplace</a>, an enterprise product with over 3 million paid users.</h3>
+      
+      <p class="cl f5 w-90 lh-copy pv4 columns">As the sole designer from its early conception through global rollout, I worked with the Engineering Director and Product Managager to shape and build the initial version of the product, with the goal of designing a communication tool that encourages an open and transparent corporate culture.</p>
+      </div>
+    </div>
+    
+    <!--<img src="work/fb/fbwork_header.png" class="header" />-->
+    
+    <div class="grid">
+      <div class="half-fit center">
+        <video autoplay loop muted playsinline class="phone v-mid" style=" display: block; margin: 0px auto 0px auto; max-width: 320px; ">
+          <source src="work/fb/fbwork_android.mp4" />
+          <!--<source src="image.webm" onerror="fallback(parentNode)">-->
+          <!--<img src="image.gif">-->
+        </video>
+      </div>
+      
+      <div class="half-fit">
+        <img src="work/fb/fbwork_profile_half.png" class="edgeright" style="width: 100%;" />
+      </div>
+      
+      <div class="new-line"></div>
+    </div>
+
+    <div class="pa4">
+
+    <div class="fl w-90 mb2 mt4 mb6 columns">
+
+        <p class="f5 f5-ns mv0 w-100 lh-copy mb5">
+          Starting out as essentially a repackaged and sandboxed off-shoot of Facebook itself, the project was massive in scope and spanned web, iOS and Android. </p>
+          <p class="f5 f5-ns w-100 lh-copy mb5 db indent">In the early days, much of the work consistented of elegantly <em>removing</em> features, determining which parts of Facebook were not appropriate or useful in a work-context.
+        </p>
+        <p class="f5 f5-ns w-100 lh-copy mb5 db indent">From erasing the concept of "friends" from a product fundamentally built on two-way connections, to educating users on what to post, where to post it, and who'd be able to see their content, the project offered substantial product, design, and engineering challenges. </p>
+    </div>
+
+      <div class="new-line"></div>
+
+  
+    <div class="content mv0 cl" style="clear: both; position: relative; top: -50px;">
+
+      <img src="work/fb/fbwork_composer@2x.png" class="center space" id="fbcomposer" style="position: relative; z-index: 100; max-width: 609px; margin-bottom: -100px; margin-top: 100px; cursor: pointer;" />
+      <div class="tc f7 light sans-serif" style="color: grey; margin-bottom: 100px">↑ Tap me</div>
+      
+    </div>
+
+    <div class="fl w-90 mb2 mt0 mb6 columns" style="margin-top: -70px;">
+
+        <p class="f5 f5-ns mv0 w-100 lh-copy mb5">
+   We learned quickly that people had to be <em>taught</em> how to use the product for work communication. Confronted with an undirected composer, people just responded by using Workplace the same they used Facebook.</p>
+   <p class="f5 f5-ns mv0 w-100 lh-copy mb5 indent">Through design, we shifted the focus from News Feed into Groups, being careful to emphasize the different uses of and separation between Facebook Workplace and "regular" Facebook, while still keeping the experiences similar enough to retain familiarity.
+          </p>
+          </div>
+    
+    <div class="grid">
+
+  <video autoplay loop muted playsinline style="margin: 40px auto 40px auto; display: block; width: 90%; max-width: 920px;">
+      <source src="work/fb/web_signup.mp4" />
+      <!--<source src="image.webm" onerror="fallback(parentNode)">-->
+      <!--<img src="image.gif">-->
+    </video>
+    
+    <div class="content">
+    
+    <!--<aside class="left">
+      <strong>DESIGN SYSTEM</strong><br />
+        Lorem ipsum dolor sit amet.
+    </aside>-->
+
+
+  </div>
+
+  <div class="fl w-90 mb2 mt4 mb6 columns">
+
+      <p class="f5 f5-ns mv0 w-100 lh-copy mb5">
+          Over 2 years on the team, I led design efforts on iOS, Android and web, established a unique and distinct brand identity for Facebook Workplace, hired and art directed third-party firms for both marketing and in-product illustrations, and helped interviewing to scale the team as we tripled in headcount.
+        </p>
+        </div>
+
+  </div>
+
+</div>
+</div>
+
+<div class="cb"></div>
+
+
+</body>
+</html>

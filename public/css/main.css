@@ -2,16 +2,35 @@ body {
   font-family: 'Superclarendon-Regular', 'Times New Roman', Times, serif !important;
   background-color: #FFEDED;
   color: #383838;
+  transition: background-color 0.3s ease;
 }
+
+  body.dark-mode {
+    background-color: #365160;
+    color: #C4C9CB;
+    
+  }
 
 a {
   color: #383838;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+  body.dark-mode a {
+    color: #C4C9CB;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  button.toggle {
+    text-decoration: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    border: none;
+  }
 
 .name {
   font-family: 'Superclarendon-Black';
@@ -24,13 +43,22 @@ ul, .dates, .light {
 
 h2, .h2 {
 font-family: 'Superclarendon-Light';
-color: #000000;
+color: #383838;
 letter-spacing: 0;
 font-weight: normal;
 display: inline;
 text-decoration: underline;
 }
 
+  body.dark-mode h2, body.dark-mode .h2 {
+    color: #C4C9CB;
+  }
+
 .place {
   color: #B0B0B0;
+}
+
+  body.dark-mode .place {
+
+  }
 }

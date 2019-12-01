@@ -1,15 +1,32 @@
 import React, { Component } from 'react';
+import useDarkMode from 'use-dark-mode';
 import './App.css';
+
+const DarkModeToggle = () => {
+  const darkMode = useDarkMode(false);
+
+  return (
+    <div>
+      <button onClick={darkMode.toggle} className="toggle">
+        ☾
+      </button>
+    </div>
+  );
+};
+
 
 class Header extends Component {
   render() {
     return (
         <div className="w-100 pb6">
-          <div className="name fl w-70 w-20-ns f6">Christine Røde</div>
-           <ul className="light fl w-30 w-80-ns list ma0 pa0 f6">
+          <div className="name fl w-60 w-20-ns f6">Christine Røde</div>
+           <ul className="light fl w-30 w-50-ns list ma0 pa0 f6">
               <Social url="http://twitter.com/chrstnerode">Twitter</Social>
               <Social url="http://instagram.com/christinerode">Instagram</Social>
             </ul>
+            <div className="name fr w-10 w-20-ns f6 tr">
+              <DarkModeToggle />
+            </div>
         </div>
     );
   }
@@ -76,13 +93,16 @@ class Resume extends Component {
         <div className="fl w-100 mb0">
           <Title>Experience</Title>
 
-          <Experience range="2017–" place="London" no="01">
+          <Experience range="2019–" place="London" no="01">
+              Product Design Lead, Rekki
+          </Experience>
+          <Experience range="2017–2019" place="London" no="02">
               Sr. Product Designer, Deliveroo
           </Experience>
-          <Experience range="2016–2017" place="Amsterdam&nbsp;/ Stockholm" no="02">
+          <Experience range="2016–2017" place="Amsterdam&nbsp;/ Stockholm" no="03">
               Freelance Designer
           </Experience>
-          <Experience range="2013–2016" place="California&nbsp;/ London" no="03">
+          <Experience range="2013–2016" place="California&nbsp;/ London" no="04">
               Product Designer, Facebook
           </Experience>
           <Experience range="&c" no="&hellip;"></Experience>
@@ -98,7 +118,7 @@ class About extends Component {
         <div className="fl w-100 mb2">
           <Title>Intro</Title>
 
-          <Paragraph no="¶">I'm Christine, a digital product designer passion&shy;ate about people, cultures, and&nbsp;places. </Paragraph>
+          <Paragraph no="¶">I'm Christine, a digital product designer passion&shy;ate about people, places, food and&nbsp;culture. </Paragraph>
           <Paragraph no="¶">My primary focus is mobile apps. I thrive when I'm solving complex problems through elegant systems and simple interfaces.</Paragraph>
 
 

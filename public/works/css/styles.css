@@ -11,6 +11,9 @@ body {
 a {
   color: #383838;
   text-decoration: none;
+}
+
+#container a {
   font-family: 'Superclarendon-Regular';
 }
 

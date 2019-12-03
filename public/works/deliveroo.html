@@ -25,14 +25,34 @@
           $(this).attr("src","work/deliveroo/appstore.png");
           console.log("mouseout");
         });
+
+        $(document).on("mouseover", '#flow', function(event) { 
+          $(this).attr("src","work/deliveroo/bonus_errors.png");
+          console.log("mouseover");
+        });
+        
+        $(document).on("mouseout", '#flow', function(event) { 
+          $(this).attr("src","work/deliveroo/bonus_transitflow.png");
+          console.log("mouseout");
+        });
         
         $.preloadImages = function() {
           for (var i = 0; i < arguments.length; i++) {
             $("<img />").attr("src", arguments[i]);
           }
         }
+
+        $(document).ready(function(){
+            $('a.hover').on('mouseenter', function(evt){
+                $('.popup').html('<img src="work/deliveroo/' + $(this).data('id') + '" />');
+                $('.popup').css({left: evt.pageX+30, top: evt.pageY-15}).show();
+                $(this).on('mouseleave', function(){
+                    $('.popup').hide();
+                });
+            });
+        });
         
-        $.preloadImages("work/deliveroo/appstore_hk.png","work/fb/fbwork_composer_clicked@2x.png");
+        $.preloadImages("work/deliveroo/appstore_hk.png","work/deliveroo/bonus_errors.png");
 
   });  
   </script>
@@ -98,7 +118,7 @@
       <p class="f5 f3-ns mv0 fl w-100 fw4 lh-copy measure">
             The Deliveroo Rider app is used by 20,000 couriers worldwide to find work, manage their hours, and deliver food to Deliveroo customers. </p>
       
-            <p class="cl f5 w-90 lh-copy pv4 columns light">
+            <p class="cl f5 w-90 lh-copy pv3 light">
               For two years, I lead design on the Rider Core team, where we focused primarily on the delivery experience. This includes getting riders to restaurants and customers as efficiently as possible, helping them to resolve common delivery issues without calling support, and empowering them with as much information as possible while taking steps to counteract abuse.
               </p>
 
@@ -111,16 +131,30 @@
 
 
       <p class="cl f5 w-90 lh-copy pt1 pb4 light">
-        Deliveroo operates in 12 different countries, from the United Kingdom to the United Arab Emirates, covering major cities across Europe, Asia, and Australia. Each market is completely different from the next, offering unique cityscapes, rider demographics, employment laws, and environmental conditions. Designing a single product that could accomodate a vast range of users and scenarios was a constant, rewarding challenge.  
+        Deliveroo operates in 12 different countries, from the United Kingdom to the United Arab Emirates, covering major cities across Europe, Asia, and Australia. Each market is completely different from the next, offering unique cityscapes, rider demographics, employment laws, and environmental conditions. <i>Designing a single product that could accomodate a vast range of users and scenarios was a constant, rewarding challenge.  </i>
         </p>
     
         <img src="work/deliveroo/orderflow.png" class="header"/>
 
                     <div class="fl w-90 mb2 mt4 mb5">
                 
-                        <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb1">
+                        <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb2">
                                 In the UK, most of Deliveroo's riders are immigrants, reliant on the income to provide for families; in Italy they are university students living with their parents. In UAE a large chunk of riders are illiterate, most transactions are done in cash, and wide roads and hostile temperatures mean motorbikes are the only possible vehicle; in Hong Kong, most deliveries are done by foot, with riders spending more time in elevators than on the ground. </p>
-                          <p class="f5 f5-ns w-100 lh-copy mb5 db indent light">Common across all of them, however, were a few themes: Lorem ipsum (TO DO)
+                          <!--<p class="f5 f5-ns w-100 lh-copy mb5 db  light pb2">But we also found commonalities. Riders want to feel empowered, and consistently ask for more transparency and info about their orders — such as restaurant waiting times, estimated delivery times, and breakdowns of earnings. They decide whether to accept or reject an order in a split second, based on dozens of intertwined factors — some visible in the app, like earnings and distance, but others based on expert knowledge like traffic patterns, geography, neighbourhood safety, and past experience with the restaurant. They use the app while in motion, navigating traffic on bikes, mopeds, scooters, and cars, with their phones in wrist straps and phone holders, or even their hand. They despair over the shift booking system. And unfortunately, there are always be a few bad actors that limit the experience for the rest — the constant task is to protect the vast majority of honest riders by anticipating every possible loophole or exploit before they can be taken advantage of.</p>-->
+
+                          <p class="f5 f5-ns w-100 lh-copy mb5 db  light pb2">Suffice to say, there's an enormous amount of information</a> that needs to be presented, a huge list of things that can go wrong, and innumerable scenarios that can occur during the order journey.</p>
+
+                          <p align="center" style="width: 100%;">
+                        <img src="work/deliveroo/bonus_transitflow.png" id="flow" class="center space ma4" style="max-width: 600px;"" /></p>
+          
+                        <div class="tc f7 light sans-serif" style="color: grey; margin-bottom: 50px">↑ Mapping out every state of the order journey</div>
+
+
+
+                          <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb2">
+                                Over two years on the team, I touched and redesigned practically every part of the app, as we worked iteratively to solve business problems, address rider concerns, and improve functionality. The projects are too many to list here, including everything from flows to address minor edge cases, to massive anti-fraud initiatives. I'd be happy to talk through all of them, given enough time.</p>
+                                
+                                <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb2">In the end, there are two projects that stand out in retrospect: both intiated by me, one sought to completely rethink the most prominent part of the app; the other a minor, superfluous feature intended for expert users.
                         </p>
                     </div>
 
@@ -135,13 +169,17 @@
             <div class="pa4">
 
             <div class="fl w-90 mb2 mt4 mb4">
-        
-              <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb1">
-                      The home screen is the first thing riders see when they open their app. It’s where they begin and end their sessions, wait for orders, browse zones, and understand demand — the jumping-off point for every aspect of their work. Yet while we had redesigned just about every part of the app, the home screen was the one thing that had gone unchanged since 2016.</p>
 
-                      <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light indent pb1">
+                <p class="f5 f4-ns mv0 w-100 fw4 lh-copy pb2">The home screen</p>
+        
+              <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb2">
+                      The home screen is the first thing riders see when they open their app. It’s where they begin and end their sessions, wait for orders, browse zones, and understand demand — the jumping-off point for every aspect of their work. </p>
+                      
+                      <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb2 ">Yet while we had redesigned just about every part of the app, the home screen was the one thing that had <a class="hover" data-id="bonus_old.png">gone unchanged</a> since 2016.</p>
+
+                      <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light  pb2">
                       We found there was a huge opportunity here to not just gain parity with competitors, but to build a scalable framework for how we present relevant information to riders, provide better insights into areas and activity, and encourage fluid movement between delivery zones to accomodate shifting demand.</p>
-                      <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light indent pb1">While the the idea was initially dismissed for not being directly tied to quarterly metrics, was able to rouse excitement and gain support from stakeholders to prioritize the project by building a prototype framed concretely around company goals.
+                      <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light  pb2">While the idea wasn't initially prioritized for not being directly tied to quarterly metrics, I was able to rouse excitement and gain support from stakeholders to prioritize the project by building and <a class="hover" data-id="presenting.jpg">presenting a prototype</a> framed concretely around company goals.
                         </p>
 
               </p>
@@ -155,25 +193,80 @@
 
                 <div class="fl w-90 mb2 mt4 mb4">
             
-                  <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb1">
-                         The goals of the new home screen were...</p>
+                  <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb2">
+                         The new home screen sought to address multiple problems...</p>
     
                   </p>
 
                   <ul class="lh-copy">
-                    <li><b>Give clarity around zone boundaries</b> — Alala </li>
-                    <li><b>Feel alive</b> — riders often call support to ask if their app is working, if they’re actually online, etc. The home screen should provide live indication of your network connection, online status, etc, to prevent feeling static and stale. </li>
+                    <li><b>Offer clarity around zone boundaries</b> – riders can only go online when they are within "the zone", but it was not clear to riders where this was. Going online used to require multiple stabs in the dark, repeatedly pressing the button until it worked.</li>
+                    <li><b>Feel more alive</b> — riders often call support to ask if their app is working, if they’re actually online, etc. The home screen should provide live indication of your network connection, online status, etc, to prevent feeling static and stale. </li>
+                    <li><b>Encourage movement</b> — nothing is worse for a rider than sitting around waiting for orders. If demand is low in the zone, we should be able to offer the rider directions to areas with greater demand.</li>
                     <li><b>Be systematic</b> — since the home screen should contain a mix of information of earnings, sessions, comms, etc, it needs to be designed in a way that lets every product team to build on it in a consistent fashion. </li>
-                    <li>TO DO WRITE MORE</li>
+                    <li><b>Be scaleable</b> — the previous home screen failed to scale gracefully to accoomodate new needs, creating over time a frankenstein interface that was difficult to iterate on.</li>
+
                   </ul>
                     
                   </div></div>
 
 
-               <img src="work/deliveroo/home-states.png" class="header pb5"/>
+               <img src="work/deliveroo/home-states.png" class="header"/>
+
+    
+
+            <div class="pa4 pv2">
+
+                <div class="fl w-90 mb4 mt4 mb4">
+            
+                      <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb2">
+                          The new home screen launched in October 2019, after I had left Deliveroo, but was very positively received by riders — including <a href="https://www.reddit.com/r/deliveroos/comments/dlfrb5/awesome_new_restaurant_location_feature/"> raves about the feature on Reddit</a>, a rare positive post in a critical community.</p>
+     
+                   </p>
+
+                   <p class="f5 f4-ns mv0 w-100 fw4 lh-copy pb2">The really big order number</p>
+
+
+                   <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb2">
+                     On the completely other end of the scale is one of my other favorite projects. Affectionately known as the Really Big Order Number, I spearheaded a feature that lets riders summon view with nothing but, well, a really big order number. Unlike the home screen that sought to dramatically improve the most prominent part of the app, this was intended as a shortcut for power users — hidden away, but useful for those who know.</p>
+
+                      <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light  pb2">We'd noticed that when collecting orders from restaurants, riders tended to just show their phone screens to the staff, rather than verbally communicating the order number. This makes total sense, when you consider that restaurants are noisy and busy environments, and both the staff and the rider are often non-native speakers.</p>
+
+                      <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light  pb2">That said, while headline-sized, the order number on the collection screen still is not legible from across the room. So we thought — how can we improve this experience? Well, what if we make it really big?</p>
+                    
+              
+
+                        </div></div>
+
+
+                        <img src="work/deliveroo/bigordernumber.png" class="header pb0"/>
+         
+             
+         
+         
+         
+                     <div class="pa4">
+         
+                         <div class="fl w-90 mb2 mb4">
+
+                            <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light pb2">I had a blast exploring loads of different interactions and visual treatments here, but in the end, we ended on something quite simple yet functional based on the following requirements:</p>
+
+                      <ul class="lh-copy">
+                          <li><b>Quick to access and dismiss</b> — Non-essential feature means opportunity for gesture-based entry point. Think muscle memory shortcut, not precise tap. </li>
+                          <li><b>Considerate of its environment</b> — A bright white screen would be a blight in a dark restaurant. A black background allows the important information to shine. </li>
+                          <li><b>Recognizably Deliveroo</b> — Many restaurants work with multiple delivery partners, so they need to know that this is a Deliveroo order.</li>
+                          </ul>
+
+                      <p class="f5 f5-ns mv0 w-100 lh-copy mb5 light  pb2">
+                          Since this was intended as a shortcut for power users, we weren't expecting huge numbers right away — so we were absolutely blown away by how quick the uptake of the feature was, and how frequently riders started using it off the bat. Now few things make me happier than spotting a rider flashing a Really Big Order Number to restaurant staff. ✨
+                      </p>
+                    
+                  </div></div>
+
+                  -->
 
 
 
+<!--
               <img src="work/deliveroo/mapplugin.gif" align="center" class="fl w-50 ph3" style="max-width: 400px; margin: 0px auto 0px auto;" />
 
               <div class="pa4">
@@ -186,12 +279,14 @@
   
                 </p>
                   
-                </div>
+                </div></div>
+                -->
 
-</div>
 </div>
 
 <div class="cb"></div>
+
+<div class="popup" style="display:none;">Popup</div>
 
 
 </body>

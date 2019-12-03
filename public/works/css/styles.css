@@ -11,6 +11,12 @@ body {
 a {
   color: #383838;
   text-decoration: none;
+  font-family: 'Superclarendon-Regular';
+}
+
+a.hover {
+  background-color: #e8e8e8;
+  cursor: pointer;
 }
 
   body.dark-mode a {
@@ -128,6 +134,16 @@ display: none;
     column-gap: 1.5em;
   }
 }
+
+.popup{
+  position:absolute;
+}
+
+.popup img{
+max-height: 400px;
+}
+
+
 
 
 

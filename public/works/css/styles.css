@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+div.thumb a:hover {
+	opacity: 0.9;
+}
+
 #container a {
   font-family: 'Superclarendon-Regular';
 }

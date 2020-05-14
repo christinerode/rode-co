@@ -92,17 +92,19 @@ class Resume extends Component {
     return (
         <div className="fl w-100 mb0">
           <Title>Experience</Title>
-
-          <Experience range="2019–" place="London" no="01">
+          <Experience range="2020–" place="London" no="01">
+              Product Designer, WhatsApp
+          </Experience>
+          <Experience range="2019–2020" place="London" no="02">
               Product Design Lead, Rekki
           </Experience>
-          <Experience range="2017–2019" place="London" no="02">
+          <Experience range="2017–2019" place="London" no="03">
               Sr. Product Designer, Deliveroo
           </Experience>
-          <Experience range="2016–2017" place="Amsterdam&nbsp;/ Stockholm" no="03">
+          <Experience range="2016–2017" place="Amsterdam&nbsp;/ Stockholm" no="04">
               Freelance Designer
           </Experience>
-          <Experience range="2013–2016" place="California&nbsp;/ London" no="04">
+          <Experience range="2013–2016" place="California&nbsp;/ London" no="05">
               Product Designer, Facebook
           </Experience>
           <Experience range="&c" no="&hellip;"></Experience>

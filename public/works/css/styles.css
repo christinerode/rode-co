@@ -18,7 +18,7 @@ div.thumb a:hover {
 }
 
 #container a {
-  font-family: 'Superclarendon-Regular';
+  font-family: 'Superclarendon-Regular', 'Clarendon', 'Superclarendon';
 }
 
 a.hover {
@@ -49,16 +49,19 @@ a.hover {
   }
 
 .name {
-  font-family: 'Superclarendon-Black';
+  font-family: 'Superclarendon-Black', 'Clarendon', 'Superclarendon';
+font-weight: 600;
   letter-spacing: 0;
 }
 
 ul, .dates, .light {
-  font-family: 'Superclarendon-Light';
+  font-family: 'Superclarendon-Light', 'Clarendon', 'Superclarendon';
+	font-weight: 200;
 }
 
 h2, .h2 {
-font-family: 'Superclarendon-Light';
+font-family: 'Superclarendon-Light', 'Clarendon', 'Superclarendon';
+	font-weight: 200;
 color: #383838;
 letter-spacing: 0;
 font-weight: normal;
@@ -85,7 +88,7 @@ text-decoration: underline;
 }
 
 #menu a {
-  font-family: Superclarendon-Regular;
+  font-family: 'Superclarendon-Regular', 'Clarendon', 'Superclarendon';
 }
 
 @media screen and (max-width: 1200px) {

@@ -96,7 +96,7 @@ class Resume extends Component {
               Designer, The Browser Co.
           </Experience>
           <Experience range="2020–2023" place="London" no="02">
-              Product Designer, WhatsApp
+              Staff Product Designer, WhatsApp
           </Experience>
           <Experience range="2019–2020" place="London" no="03">
               Product Design Lead, Rekki
